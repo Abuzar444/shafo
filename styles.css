@@ -85,8 +85,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  top: -10px;
+  top: -70px;
   position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.video img {
+  border-radius: 10px;
+  width: 100%;
 }
 
 .video-icon {
@@ -95,13 +102,17 @@
   border: 50%;
 }
 
+.cols {
+  background-image: url("./images//two-col.jpeg");
+}
 .two-col {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-content: center;
-  background-image: url("./images//two-col.jpeg");
-  padding: 0 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 3rem;
 }
 
 .two-col img {
@@ -113,7 +124,16 @@
 }
 
 .col-cont h2 {
-  font-size: 5rem;
+  font-size: 3rem;
+  line-height: 5rem;
+}
+
+.col-cont p {
+  line-height: 1.5rem;
+}
+
+.col-cont ul li {
+  line-height: 1.5rem;
 }
 
 .section-title {
@@ -121,10 +141,12 @@
   text-align: center;
   font-family: sans-serif;
   padding: 2rem 0;
+  line-height: 10rem;
 }
 
 .blog {
   background: rgb(253, 252, 252);
+  padding-left: 20px;
 }
 .card {
   height: 27rem;
@@ -132,6 +154,7 @@
   /* talk later */
   -webkit-perspective: 1500px;
   perspective: 1500px;
+  box-shadow: inset;
 }
 .card-side {
   -webkit-transition: all 2s linear;
